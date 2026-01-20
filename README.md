@@ -10,17 +10,20 @@ Deploys the application containers
 ---
 
 ## 🏗️ Architecture
-flowchart TD
-    Dev[Developer] -->|Push Code| GitHub[GitHub Repository]
 
-    GitHub -->|Webhook / Poll SCM| Jenkins[Jenkins CI/CD]
-
-    Jenkins -->|Build Images| DockerCompose[Docker Compose]
-
-    DockerCompose --> App[Application Container]
-    DockerCompose --> DB[Database Container]
-
-    App <-->|Docker Network| DB
+Developer
+   |
+   v
+GitHub Repository
+   |
+   v
+Jenkins CI/CD
+   |
+   v
+Docker Compose
+   |
+   v
+Application Container <----> Database Container
     
 - Jenkins pulls source code from GitHub
 - Docker images are built using Docker Compose
