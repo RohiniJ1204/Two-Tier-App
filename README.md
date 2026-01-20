@@ -65,11 +65,16 @@ Any new container added to docker-compose.yml will be automatically built and de
 prerequisites
 - Docker installed
 - Docker compose v2 enabled
+
 Steps:
 git clone https://github.com/RohiniJ1204/Two-Tier-App.git
+
 cd Two-Tier-App
+
 docker compose build
+
 docker compose up -d
+
 Access the application:
 http://localhost:<application_port>
 
