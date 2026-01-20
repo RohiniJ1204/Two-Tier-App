@@ -12,13 +12,21 @@ Deploys the application containers
 ## 🏗️ Architecture
 
 Developer
+
 ↓
+
 GitHub Repository
+
 ↓
+
 Jenkins CI/CD
+
 ↓
+
 Docker Compose
+
 ↓
+
 Application Container ↔ Database Container
     
 - Jenkins pulls source code from GitHub
