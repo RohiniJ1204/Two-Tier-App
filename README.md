@@ -11,14 +11,15 @@ Deploys the application containers
 
 ## 🏗️ Architecture
 
-```mermaid
-flowchart TD
-    Dev[Developer] --> GitHub[GitHub Repository]
-    GitHub --> Jenkins[Jenkins CI/CD]
-    Jenkins --> DockerCompose[Docker Compose]
-    DockerCompose --> App[Application Container]
-    DockerCompose --> DB[Database Container]
-    App <---> DB
+Developer
+↓
+GitHub Repository
+↓
+Jenkins CI/CD
+↓
+Docker Compose
+↓
+Application Container ↔ Database Container
     
 - Jenkins pulls source code from GitHub
 - Docker images are built using Docker Compose
