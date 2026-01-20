@@ -1,11 +1,8 @@
 # 🚀 Two-Tier Web Application with Docker & Jenkins CI/CD
 
 ## 📌 Project Overview
-This project demonstrates a Two-Tier Web Application deployed using Docker and automated with a Jenkins CI/CD pipeline. The application consists of an application tier and a database tier, containerized and managed using Docker Compose.
-The CI/CD pipeline automatically:
-Pulls source code from GitHub
-Builds Docker images
-Deploys the application containers
+This project implements a Two-Tier Web Application deployed using Docker and Docker Compose, integrated with a Jenkins CI/CD pipeline for automated build and deployment. 
+The application and database are containerized as separate services, enabling modular design and easy scalability. Jenkins automates the workflow by pulling the latest code from GitHub, building Docker images, and deploying the application using Docker Compose on a linux environment.
 
 ---
 
@@ -131,10 +128,11 @@ http://localhost:<application_port>
 ---
 
 ## 🚀Future improvements
-Add automated testing stage in Jenkins
-Push Docker images to Docker Hub
-Deploy using Kubernetes
-Add monitoring using Prometheus & Grafana
+
+- Add automated testing stage in Jenkins
+- Push Docker images to Docker Hub
+- Deploy using Kubernetes
+- Add monitoring using Prometheus & Grafana
 
 ---
 
