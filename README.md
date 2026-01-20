@@ -11,29 +11,47 @@ Deploys the application containers
 
 ## 🏗️ Architecture
 
-Developer
-
-↓
-
-GitHub Repository
-
-↓
-
-Jenkins CI/CD
-
-↓
-
-Docker Compose
-
-↓
-
-Application Container ↔ Database Container
+                ┌───────────────┐
+                │ User / Browser│
+                └───────┬───────┘
+                        │
+                        │ HTTP Request
+                        ▼
+                ┌──────────────────┐
+                │  Web Application │
+                │  (App Container) │
+                └───────┬──────────┘
+                        │
+                        │ Database Request
+                        ▼
+                ┌──────────────────┐
+                │   Database       │
+                │ (DB Container)   │
+                └──────────────────┘
     
-- Jenkins pulls source code from GitHub
-- Docker images are built using Docker Compose
-- Application and database run as isolated containers
-- Docker networking enables service-to-service communication
+## Architecture Explanation
+The application follows a Two-Tier Architecuture
+Frontend/Application Layer runs inside a Docker container
+Database Layer runs in a separate Docker container
+Containers communicate using a Docker container 
+Containers communicate using Docker network via docker compose
+Jenkins automates build,test, and deployment
 
+## CI/CD architecture flow
+
+Developer
+   │
+   │  Push Code
+   ▼
+GitHub Repository
+   │
+   │  Webhook / Poll SCM
+   ▼
+Jenkins
+   │
+   ├── Build Docker Images
+   ├── Run docker-compose
+   └── Deploy Containers
 ---
   
 ## 🛠️ Tools & Technologies Used
