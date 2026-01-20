@@ -37,22 +37,20 @@ Containers communicate using a Docker container
 Containers communicate using Docker network via docker compose
 Jenkins automates build,test, and deployment
 
-## CI/CD architecture flow
-
-Developer
-   │
-   │  Push Code
-   ▼
+## CI/CD Architecture Flow
+Developer 
+    │
+    │ Push Code
+    ▼
 GitHub Repository
-   │
-   │  Webhook / Poll SCM
-   ▼
-Jenkins
-   │
-   ├── Build Docker Images
-   ├── Run docker-compose
-   └── Deploy Containers
----
+    │
+    │ HTTP Request
+    ▼
+    Jenkins
+    ├── Build Docker Images
+    ├── Run docker compose
+    └── Deploy Containers
+    
   
 ## 🛠️ Tools & Technologies Used
 - Docker
