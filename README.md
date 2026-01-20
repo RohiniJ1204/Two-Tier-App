@@ -47,19 +47,11 @@ Application Container ↔ Database Container
 
 ## 📂 Project Structure
 Two-Tier-App/
-
-│
-
 ├── app/ Application source code
-
 ├── db/ Database configuration/scripts
-
 ├── Dockerfile Dockerfile for application
-
 ├── docker-compose.yml Multi-container setup
-
 ├── Jenkinsfile Jenkins CI/CD pipeline
-
 └── README.md Project documentation
 
 
