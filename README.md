@@ -37,8 +37,8 @@ Container Container
 
   ---
 
-  ##  📂 Project Structure
-  Two-Tier-App/
+##  📂 Project Structure
+Two-Tier-App/
 │
 ├── app/                  # Application source code
 ├── db/                   # Database configuration/scripts
@@ -54,7 +54,7 @@ The Jenkins pipeline performs the following steps:
 1. Checkout Code - Pulls latest code from GitHub
 2. Build Docker Images - Builds images using Docker Compose
 3. Deploy Application - Starts application and database containers
-Jenkinsfile (key Commands)
+## Jenkinsfile (key Commands)
 docker compose build
 docker compose up -d
 Any new container added to docker-compose.yml will be automatically built and deployed without modifying the Jenkinfile.
@@ -106,5 +106,7 @@ Add monitoring using Prometheus & Grafana
 
 ## 👤 Author
 Rohini Javvaji
+
 Aspiring DevOps Engineer
+
 GitHub: https://github.com/RohiniJ1204
