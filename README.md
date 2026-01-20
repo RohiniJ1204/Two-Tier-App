@@ -37,7 +37,7 @@ Container Container
 
   ---
 
-##  📂 Project Structure
+## 📂 Project Structure
 Two-Tier-App/
 │
 ├── app/                  # Application source code
