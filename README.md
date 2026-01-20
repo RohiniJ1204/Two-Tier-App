@@ -26,14 +26,14 @@ Container Container
 - Application and database run as isolated containers
 - Docker networking enables service-to-service communication
 
-  ---
+---
   
-  ## 🛠️ Tools & Technologies Used
-  Docker
-  Docker Compose
-  Jenkins (Declarative pipeline)
-  Git & GitHub
-  Linux (Ubuntu / Cloud VM)
+## 🛠️ Tools & Technologies Used
+- Docker
+- Docker Compose
+- Jenkins (Declarative pipeline)
+- Git & GitHub
+- Linux (Ubuntu / Cloud VM)
 
   ---
 
@@ -67,15 +67,15 @@ prerequisites
 - Docker compose v2 enabled
 
 Steps:
-git clone https://github.com/RohiniJ1204/Two-Tier-App.git
+- git clone https://github.com/RohiniJ1204/Two-Tier-App.git
 
-cd Two-Tier-App
+- cd Two-Tier-App
 
-docker compose build
+- docker compose build
 
-docker compose up -d
+- docker compose up -d
 
-Access the application:
+- Access the application:
 http://localhost:<application_port>
 
 ---
