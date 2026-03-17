@@ -27,12 +27,17 @@ The application and database are containerized as separate services, enabling mo
                 └──────────────────┘
     
 ## Architecture Explanation
-The application follows a Two-Tier Architecuture
-Frontend/Application Layer runs inside a Docker container
-Database Layer runs in a separate Docker container
-Containers communicate using a Docker container 
-Containers communicate using Docker network via docker compose
-Jenkins automates build,test, and deployment
+
+---
+
+- The application follows a Two-Tier Architecuture.
+- Frontend/Application Layer runs inside a Docker container.
+- Database Layer runs in a separate Docker container.
+- Containers communicate using a Docker container.
+- Containers communicate using Docker network via docker compose.
+- Jenkins automates build,test, and deployment.
+
+---
 
 ## CI/CD Architecture Flow
 
@@ -53,6 +58,10 @@ GitHub Repository
     
   
 ## 🛠️ Tools & Technologies Used
+
+
+---
+
 - Docker
 - Docker Compose
 - Jenkins (Declarative pipeline)
@@ -73,16 +82,20 @@ Two-Tier-App/
 └── README.md            Project documentation
 ```
 
+## 🔄 CI/CD Pipeline Workflow
 
 ---
 
-## 🔄 CI/CD Pipeline Workflow
 The Jenkins pipeline performs the following steps:
 1. Checkout Code - Pulls latest code from GitHub
 2. Build Docker Images - Builds images using Docker Compose
 3. Deploy Application - Starts application and database containers
+
+---
    
 ## Jenkinsfile (key Commands)
+
+---
 
 docker compose build
 
@@ -93,6 +106,9 @@ Any new container added to docker-compose.yml will be automatically built and de
 ---
 
 ## ▶️ How to Run the project manually
+
+---
+
 prerequisites
 - Docker installed
 - Docker compose v2 enabled
@@ -112,6 +128,9 @@ http://localhost:<application_port>
 ---
 
 ## 🧪 Jenkins Setup Summary
+
+---
+
 - Jenkins installed on Linux instance
 - Jenkins user added to Docker group
 - Pipeline triggered manually or via GitHub webhook
@@ -120,6 +139,9 @@ http://localhost:<application_port>
 ---
 
 ## 📈 What This Project Demonstrates
+
+---
+
 - Containerization of applications using Docker
 - Multi-container orchestration using Docker Compose
 - CI/CD automation using Jenkins
@@ -129,6 +151,8 @@ http://localhost:<application_port>
 
 ## 🚀Future improvements
 
+---
+
 - Add automated testing stage in Jenkins
 - Push Docker images to Docker Hub
 - Deploy using Kubernetes
@@ -137,6 +161,9 @@ http://localhost:<application_port>
 ---
 
 ## 👤 Author
+
+---
+
 Rohini Javvaji
 
 Aspiring DevOps Engineer
