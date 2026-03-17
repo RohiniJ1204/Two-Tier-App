@@ -74,12 +74,18 @@ GitHub Repository
 
 ```
 Two-Tier-App/
-├── app/                 Application source code
-├── db/                  Database configuration/scripts
-├── Dockerfile           Dockerfile for application
-├── docker-compose.yml   Multi-container setup
-├── Jenkinsfile          Jenkins CI/CD pipeline
-└── README.md            Project documentation
+│
+├── app/                      # Application code (Backend)
+│   ├── app.py               # Main application file
+│   ├── requirements.txt     # Python dependencies
+│   └── Dockerfile           # Docker image for app
+│
+├── db/                      # Database setup
+│   └── init.sql            # Database initialization script
+│
+├── docker-compose.yml       # Multi-container setup (App + DB)
+├── Jenkinsfile              # Jenkins CI/CD pipeline script 
+└── README.md                # Project documentation
 ```
 
 ## 🔄 CI/CD Pipeline Workflow
